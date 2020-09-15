@@ -93,6 +93,8 @@ app.post("/repositories/:id/like", (request, response) => {
     //a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
   
   const { id } = request.params;
+  
+  //const repository = repositories.find(repository => repository.id === id);
 
   const repository = repositories.find(repository => repository.id === id);
   
